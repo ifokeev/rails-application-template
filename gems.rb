@@ -1,8 +1,10 @@
 #чтобы было красиво
 gem_group :development do
   gem 'quiet_assets'
-  gem "better_errors"
-  gem "binding_of_caller"
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+  gem 'bullet'
 end
 
 gem_group :test do
@@ -19,6 +21,8 @@ gem_group :test do
   gem 'simplecov', require: false
 end
 
+gem 'awesome_print', require: 'ap'
+
 gem 'rspec-rails', group: [:test, :development]
 gem 'ffaker', group: [:test, :development]
 
@@ -26,7 +30,7 @@ gem 'mysql2', group: :production
 
 gem 'haml'
 gem 'haml-rails'
-gem "paperclip", "~> 4.2"
+gem 'paperclip', '~> 4.2'
 gem 'simple_form'
 gem 'jquery-turbolinks'
 
